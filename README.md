@@ -1,4 +1,4 @@
-# Desktop Commander MCP
+# FS Copilot
 ### Search, update, manage files and run terminal commands with AI
 
 [![npm downloads](https://img.shields.io/npm/dw/@wonderwhy-er/desktop-commander)](https://www.npmjs.com/package/@wonderwhy-er/desktop-commander)
@@ -13,7 +13,7 @@
 Work with code and text, run processes, and automate tasks, going far beyond other AI editors - while using host client subscriptions instead of API token costs.
 
 <a href="https://glama.ai/mcp/servers/zempur9oh4">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/zempur9oh4/badge" alt="Desktop Commander MCP" />
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/zempur9oh4/badge" alt="FS Copilot" />
 </a>
 
 ## Table of Contents
@@ -33,12 +33,12 @@ Work with code and text, run processes, and automate tasks, going far beyond oth
 - [License](#license)
 
 All of your AI development tools in one place.
-Desktop Commander puts all dev tools in one chat.
+FS Copilot puts all dev tools in one chat.
 Execute long-running terminal commands on your computer and manage processes through Model Context Protocol (MCP). Built on top of [MCP Filesystem Server](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) to provide additional search and replace file editing capabilities.
 
 ## Features
 
-- **Remote AI Control** - Use Desktop Commander from ChatGPT, Claude web, and other AI services via [Remote MCP](https://mcp.desktopcommander.app)
+- **Remote AI Control** - Use FS Copilot from ChatGPT, Claude web, and other AI services via [Remote MCP](https://mcp.desktopcommander.app)
 - **Enhanced terminal commands with interactive process control**
 - **Execute code in memory (Python, Node.js, R) without saving files**
 - **Instant data analysis - just ask to analyze CSV/JSON/Excel files**
@@ -73,7 +73,7 @@ Execute long-running terminal commands on your computer and manage processes thr
 
 ## How to install
 
-Desktop Commander offers multiple installation methods to fit different user needs and technical requirements.
+FS Copilot offers multiple installation methods to fit different user needs and technical requirements.
 
 > **📋 Update & Uninstall Information:** Before choosing an installation option, note that **only Options 1, 2, 3, and 6 have automatic updates**. Options 4 and 5 require manual updates. See the sections below for update and uninstall instructions for each option.
 
@@ -99,7 +99,7 @@ Restart Claude if running.
 **🗑️ Uninstall:** Run `npx @wonderwhy-er/desktop-commander@latest remove`
 
 ### Option 2: Using bash script installer (macOS) ⭐ **Auto-Updates** **Installs Node.js if needed**
-For macOS users, you can use our automated bash installer which will check your Node.js version, install it if needed, and automatically configure Desktop Commander:
+For macOS users, you can use our automated bash installer which will check your Node.js version, install it if needed, and automatically configure FS Copilot:
 ```
 curl -fsSL https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/refs/heads/main/install.sh | bash
 ```
@@ -111,7 +111,7 @@ This script handles all dependencies and configuration automatically for a seaml
 
 ### Option 3: Installing via Smithery ⭐ **Auto-Updates** **Requires Node.js**
 
-To install Desktop Commander for Claude Desktop via [Smithery](https://smithery.ai/server/@wonderwhy-er/desktop-commander):
+To install FS Copilot for Claude Desktop via [Smithery](https://smithery.ai/server/@wonderwhy-er/desktop-commander):
 
 1. **Visit the Smithery page:** https://smithery.ai/server/@wonderwhy-er/desktop-commander
 2. **Login to Smithery** if you haven't already
@@ -171,7 +171,7 @@ The setup command will:
 
 ### Option 6: Docker Installation 🐳 ⭐ **Auto-Updates** **No Node.js Required**
 
-Perfect for users who want complete or partial isolation or don't have Node.js installed. Desktop Commander runs in a sandboxed Docker container with a persistent work environment.
+Perfect for users who want complete or partial isolation or don't have Node.js installed. FS Copilot runs in a sandboxed Docker container with a persistent work environment.
 
 #### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed **and running**
@@ -200,7 +200,7 @@ The automated installer will:
 - Restart Claude if possible
 
 #### How Docker Persistence Works
-Desktop Commander creates a persistent work environment that remembers everything between sessions:
+FS Copilot creates a persistent work environment that remembers everything between sessions:
 - **Your development tools**: Any software you install (Node.js, Python, databases, etc.) stays installed
 - **Your configurations**: Git settings, SSH keys, shell preferences, and other personal configs are preserved  
 - **Your work files**: Projects and files in the workspace area persist across restarts
@@ -324,7 +324,7 @@ This will completely reset your persistent environment and reinstall everything 
 
 ## Remote MCP (ChatGPT, Claude Web) 🌐
 
-Use Desktop Commander from **ChatGPT**, **Claude web**, and other AI services through their MCP/Connector integrations - no Claude Desktop app required.
+Use FS Copilot from **ChatGPT**, **Claude web**, and other AI services through their MCP/Connector integrations - no Claude Desktop app required.
 
 **👉 Get started at [mcp.desktopcommander.app](https://mcp.desktopcommander.app)**
 
@@ -347,7 +347,7 @@ The website provides complete instructions for:
 - ✅ Commands execute under your user permissions
 - ✅ Secure OAuth authentication and encrypted communication channel
 
-## Updating & Uninstalling Desktop Commander
+## Updating & Uninstalling FS Copilot
 
 ### Automatic Updates (Options 1, 2, 3, 4 & 6)
 **Options 1 (npx), Option 2 (bash installer), 3 (Smithery), 4 (manual config), and 6 (Docker)** automatically update to the latest version whenever you restart Claude. No manual intervention needed.
@@ -355,17 +355,17 @@ The website provides complete instructions for:
 ### Manual Updates (Option 5)
 - **Option 5 (local checkout):** `cd DesktopCommanderMCP && git pull && npm run setup`
 
-### Uninstalling Desktop Commander
+### Uninstalling FS Copilot
 #### 🤖 Automatic Uninstallation (Recommended)
 
-The easiest way to completely remove Desktop Commander:
+The easiest way to completely remove FS Copilot:
 
 ```bash
 npx @wonderwhy-er/desktop-commander@latest remove
 ```
 
 This automatic uninstaller will:
-- ✅ Remove Desktop Commander from Claude's MCP server configuration
+- ✅ Remove FS Copilot from Claude's MCP server configuration
 - ✅ Create a backup of your Claude config before making changes
 - ✅ Provide guidance for complete package removal
 - ✅ Restore from backup if anything goes wrong
@@ -412,18 +412,18 @@ Close and restart Claude Desktop to complete the removal.
 
 ## Getting Started
 
-Once Desktop Commander is installed and Claude Desktop is restarted, you're ready to supercharge your Claude experience!
+Once FS Copilot is installed and Claude Desktop is restarted, you're ready to supercharge your Claude experience!
 
 ### 🚀 New User Onboarding
 
-Desktop Commander includes intelligent onboarding to help you discover what's possible:
+FS Copilot includes intelligent onboarding to help you discover what's possible:
 
-**For New Users:** When you're just getting started (fewer than 10 successful commands), Claude will automatically offer helpful getting-started guidance and practical tutorials after you use Desktop Commander successfully.
+**For New Users:** When you're just getting started (fewer than 10 successful commands), Claude will automatically offer helpful getting-started guidance and practical tutorials after you use FS Copilot successfully.
 
 **Request Help Anytime:** You can ask for onboarding assistance at any time by simply saying:
-- *"Help me get started with Desktop Commander"*
-- *"Show me Desktop Commander examples"* 
-- *"What can I do with Desktop Commander?"*
+- *"Help me get started with FS Copilot"*
+- *"Show me FS Copilot examples"* 
+- *"What can I do with FS Copilot?"*
 
 Claude will then show you beginner-friendly tutorials and examples, including:
 - 📁 Organizing your Downloads folder automatically
@@ -464,7 +464,7 @@ The server provides a comprehensive set of tools organized into several categori
 | **Text Editing** | `edit_block` | Apply targeted text replacements for text files, or range-based cell updates for Excel files |
 | **Analytics** | `get_usage_stats` | Get usage statistics for your own insight |
 | | `get_recent_tool_calls` | Get recent tool call history with arguments and outputs for debugging and context recovery |
-| | `give_feedback_to_desktop_commander` | Open feedback form in browser to provide feedback to Desktop Commander Team |
+| | `give_feedback_to_desktop_commander` | Open feedback form in browser to provide feedback to FS Copilot Team |
 
 ### Quick Examples
 
@@ -521,14 +521,14 @@ When a search fails, you'll see detailed information about the closest match fou
 
 ### 🐳 Isolated Environment Usage
 
-Desktop Commander can be run in Docker containers for **complete isolation from your host system**, providing **zero risk to your computer**. This is perfect for testing, development, or when you want complete sandboxing.
+FS Copilot can be run in Docker containers for **complete isolation from your host system**, providing **zero risk to your computer**. This is perfect for testing, development, or when you want complete sandboxing.
 
 ### Installation Instructions
 
 1. **Install Docker for Windows/Mac**
    - Download and install Docker Desktop from [docker.com](https://www.docker.com/products/docker-desktop/)
 
-2. **Get Desktop Commander Docker Configuration**
+2. **Get FS Copilot Docker Configuration**
    - Visit: https://hub.docker.com/mcp/server/desktop-commander/manual
    - **Option A:** Use the provided terminal command for automated setup
    - **Option B:** Click "Standalone" to get the config JSON and add it manually to your Claude Desktop config
@@ -574,7 +574,7 @@ For detailed documentation on these scripts, see [scripts/README.md](scripts/REA
 
 ## Fuzzy Search Logs
 
-Desktop Commander includes comprehensive logging for fuzzy search operations in the `edit_block` tool. When an exact match isn't found, the system performs a fuzzy search and logs detailed information for analysis.
+FS Copilot includes comprehensive logging for fuzzy search operations in the `edit_block` tool. When an exact match isn't found, the system performs a fuzzy search and logs detailed information for analysis.
 
 ### What Gets Logged
 
@@ -602,7 +602,7 @@ The fuzzy search logs help you understand:
 
 ## Audit Logging
 
-Desktop Commander now includes comprehensive logging for all tool calls:
+FS Copilot now includes comprehensive logging for all tool calls:
 
 ### What Gets Logged
 - Every tool call is logged with timestamp, tool name, and arguments (sanitized for privacy)
@@ -687,11 +687,11 @@ set_config_value({ "key": "fileWriteLineLimit", "value": 25 })
 
 ## Command Line Options
 
-Desktop Commander supports several command line options for customizing behavior:
+FS Copilot supports several command line options for customizing behavior:
 
 ### Disable Onboarding
 
-By default, Desktop Commander shows helpful onboarding prompts to new users (those with fewer than 10 tool calls). You can disable this behavior:
+By default, FS Copilot shows helpful onboarding prompts to new users (those with fewer than 10 tool calls). You can disable this behavior:
 
 ```bash
 # Disable onboarding for this session
@@ -790,14 +790,14 @@ This project extends the MCP Filesystem Server to enable:
 
 Created as part of exploring Claude MCPs: https://youtube.com/live/TlbjFDbl5Us
 
-## Support Desktop Commander
+## Support FS Copilot
 
 <div align="center">
   <h3>📢 SUPPORT THIS PROJECT</h3>
-  <p><strong>Desktop Commander MCP is free and open source, but needs your support to thrive!</strong></p>
+  <p><strong>FS Copilot is free and open source, but needs your support to thrive!</strong></p>
   
   <div style="background-color: #f8f9fa; padding: 15px; border-radius: 10px; margin: 20px 0; border: 2px solid #007bff;">
-    <p>Our philosophy is simple: we don't want you to pay for it if you're not successful. But if Desktop Commander contributes to your success, please consider contributing to ours.</p>
+    <p>Our philosophy is simple: we don't want you to pay for it if you're not successful. But if FS Copilot contributes to your success, please consider contributing to ours.</p>
     <p><strong>Ways to support:</strong></p>
     <ul style="list-style-type: none; padding: 0;">
       <li>🌟 <a href="https://github.com/sponsors/wonderwhy-er"><strong>GitHub Sponsors</strong></a> - Recurring support</li>
@@ -858,7 +858,7 @@ Learn more about this project through these resources:
 [Claude with MCPs replaced Cursor & Windsurf. How did that happen?](https://wonderwhy-er.medium.com/claude-with-mcps-replaced-cursor-windsurf-how-did-that-happen-c1d1e2795e96) - A detailed exploration of how Claude with Model Context Protocol capabilities is changing developer workflows.
 
 ### Video
-[Claude Desktop Commander Video Tutorial](https://www.youtube.com/watch?v=ly3bed99Dy8) - Watch how to set up and use the Commander effectively.
+[Claude FS Copilot Video Tutorial](https://www.youtube.com/watch?v=ly3bed99Dy8) - Watch how to set up and use the Commander effectively.
 
 ### Publication at AnalyticsIndiaMag
 [![analyticsindiamag.png](testemonials%2Fanalyticsindiamag.png)
@@ -907,17 +907,17 @@ If you find this tool valuable for your workflow, please consider [supporting th
 
 Here are answers to some common questions. For a more comprehensive FAQ, see our [detailed FAQ document](FAQ.md).
 
-### What is Desktop Commander?
+### What is FS Copilot?
 It's an MCP tool that enables Claude Desktop to access your file system and terminal, turning Claude into a versatile assistant for coding, automation, codebase exploration, and more.
 
 ### How is this different from Cursor/Windsurf?
-Unlike IDE-focused tools, Claude Desktop Commander provides a solution-centric approach that works with your entire OS, not just within a coding environment. Claude reads files in full rather than chunking them, can work across multiple projects simultaneously, and executes changes in one go rather than requiring constant review.
+Unlike IDE-focused tools, Claude FS Copilot provides a solution-centric approach that works with your entire OS, not just within a coding environment. Claude reads files in full rather than chunking them, can work across multiple projects simultaneously, and executes changes in one go rather than requiring constant review.
 
 ### Do I need to pay for API credits?
 No. This tool works with Claude Desktop's standard Pro subscription ($20/month), not with API calls, so you won't incur additional costs beyond the subscription fee.
 
-### Does Desktop Commander automatically update?
-Yes, when installed through npx or Smithery, Desktop Commander automatically updates to the latest version when you restart Claude. No manual update process is needed.
+### Does FS Copilot automatically update?
+Yes, when installed through npx or Smithery, FS Copilot automatically updates to the latest version when you restart Claude. No manual update process is needed.
 
 ### What are the most common use cases?
 - Exploring and understanding complex codebases
@@ -934,9 +934,9 @@ Please create a [GitHub Issue](https://github.com/wonderwhy-er/DesktopCommanderM
 
 ## Data Collection & Privacy
 
-Desktop Commander collects limited, pseudonymous telemetry to improve the tool. We do not collect file contents, file paths, or command arguments.
+FS Copilot collects limited, pseudonymous telemetry to improve the tool. We do not collect file contents, file paths, or command arguments.
 
-**Opt-out:** Ask Claude to "disable Desktop Commander telemetry" or set `"telemetryEnabled": false` in your config.
+**Opt-out:** Ask Claude to "disable FS Copilot telemetry" or set `"telemetryEnabled": false` in your config.
 
 For complete details, see our [Privacy Policy](PRIVACY.md).
 
